@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nyende Constructions</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+  <div class="header-container">
+    <img src="images/logo1.png" alt="Nyende Logo" class="logo" onclick="openLogoLightbox()">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div class="overlay">
+    <div class="hero-text">
+      <h1>Nyende Constructions</h1>
+      <p>Your vision, our blueprint. We guide, you decide — every step of the way.</p>
+    </div>
+  </div>
+  <div class="slideshow-container">
+  <img id="slideshow-image" src="images/house1.jpg" alt="Slideshow Image" class="hero-img" />
+</div>
+</section>
+
+<section id="about" class="about">
+  <div class="about-container">
+    <h2>About Us</h2>
+    <p>
+      Nyende Constructions is a passionate and skilled building company led by Engineer Crispinus Nyende. 
+      With a solid foundation in structural design and site management, we specialize in creating long-lasting, 
+      client-centered homes and commercial buildings. Whether you have a full blueprint or just a vision in your mind, 
+      we walk with you — step by step — to bring your ideas to life.
+    </p>
+    <p>
+      Our mission is to provide quality construction with integrity, transparency, and professionalism. 
+      From simple renovations to major projects, we approach every job with attention to detail and commitment to excellence.
+    </p>
+  </div>
+</section>
+<section id="services" style="padding: 60px 20px; background-color: #ffffff;">
+  <h2 style="text-align: center; font-size: 32px; margin-bottom: 40px;">Our Services</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+
+    <div style="max-width: 300px; background: #f2f2f2; border-radius: 8px; padding: 20px;">
+      <h3>Residential Construction</h3>
+      <p>Building durable, modern family homes with precision and care.</p>
+    </div>
+
+    <div style="max-width: 300px; background: #f2f2f2; border-radius: 8px; padding: 20px;">
+      <h3>Commercial Projects</h3>
+      <p>Design and construction of shops, offices, and business premises.</p>
+    </div>
+
+    <div style="max-width: 300px; background: #f2f2f2; border-radius: 8px; padding: 20px;">
+      <h3>Renovations & Repairs</h3>
+      <p>Restoring and upgrading existing spaces with professional quality.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="projects" class="projects" style="padding: 60px 20px; background-color: #f9f9f9;">
+  <div style="max-width: 1200px; margin: auto;">
+    <h2 style="text-align: center; margin-bottom: 40px;">Our Projects</h2>
+    <p style="text-align: center;">Take a look at some of our completed works:</p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+      
+      <!-- Project Card -->
+      <div style="flex: 1 1 300px; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); overflow: hidden;">
+        <img src="images/project1.jpg" alt="Project 1" style="width: 100%; height: auto;">
+        <div style="padding: 15px;">
+          <h3>Kitengela Family Home</h3>
+          <p>A modern 4-bedroom home built with elegance and durability in mind.</p>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div style="flex: 1 1 300px; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); overflow: hidden;">
+        <img src="images/project2.jpg" alt="Project 2" style="width: 100%; height: auto;">
+        <div style="padding: 15px;">
+          <h3>Isinya Renovation</h3>
+          <p>Transformed an aging structure into a stylish, energy-efficient space.</p>
+        </div>
+      </div>
+
+      <!-- Project Card -->
+      <div style="flex: 1 1 300px; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); overflow: hidden;">
+        <img src="images/project3.jpg" alt="Project 3" style="width: 100%; height: auto;">
+        <div style="padding: 15px;">
+          <h3>Commercial Office Block</h3>
+          <p>Complete construction of a two-story business complex in Kajiado town.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item"><img src="images/gallery1.jpg" alt="Gallery 1" onclick="openLightbox(0)"></div>
+    <div class="gallery-item"><img src="images/gallery2.jpg" alt="Gallery 2" onclick="openLightbox(1)"></div>
+    <div class="gallery-item"><img src="images/gallery3.jpg" alt="Gallery 3" onclick="openLightbox(2)"></div>
+    <div class="gallery-item"><img src="images/gallery4.jpg" alt="Gallery 4" onclick="openLightbox(3)"></div>
+    <div class="gallery-item"><img src="images/gallery5.jpg" alt="Gallery 5" onclick="openLightbox(4)"></div>
+    <div class="gallery-item"><img src="images/gallery6.jpg" alt="Gallery 6" onclick="openLightbox(5)"></div>
+    <div class="gallery-item"><img src="images/gallery7.jpg" alt="Gallery 7" onclick="openLightbox(6)"></div>
+    <div class="gallery-item"><img src="images/gallery8.jpg" alt="Gallery 8" onclick="openLightbox(7)"></div>
+  </div>
+</section>
+
+<!-- Lightbox container -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <a class="lightbox-prev" onclick="changeImage(-1)">&#10094;</a>
+  <img class="lightbox-img" id="lightbox-img" src="">
+  <a class="lightbox-next" onclick="changeImage(1)">&#10095;</a>
+</div>
+
+
+
+<section id="contact" class="contact" style="padding: 60px 20px; background-color: #f2f2f2;">
+  <div class="contact-container" style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
+    
+    <!-- Contact Details -->
+    <div style="flex: 1 1 300px;">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you. Reach out via call, WhatsApp, or email:</p>
+      <p><strong>📞 Phone:</strong> <a href="tel:+254799713348">+254 799 713348</a></p>
+      <p><strong>📧 Email:</strong> <a href="mailto:nyendechrispinus@gmail.com">nyendechrispinus@gmail.com</a></p>
+      <p><strong>📍 Location:</strong> Kajiado, Kenya</p>
+      <a href="https://wa.me/254799713348" class="whatsapp-button" target="_blank">💬 Chat on WhatsApp</a>
+    </div>
+
+    <!-- Message Form -->
+    <div style="flex: 1 1 300px;">
+      <h2>Message Us</h2>
+      <p>Or just send us a message here:</p>
+      <form action="https://formspree.io/f/mpwlyrqq" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
+        <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
+        <textarea name="message" placeholder="Your Message" required style="width: 100%; padding: 10px; margin-bottom: 10px;"></textarea>
+        <button type="submit" style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; cursor: pointer;">Send</button>
+      </form>
+    </div>
+    
+  </div>
+</section>
+
+<section id="testimonials" style="padding: 60px 20px; background-color: #f9f9f9;">
+  <h2 style="text-align: center; font-size: 32px; margin-bottom: 40px;">Client Testimonials</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+
+    <div style="max-width: 300px; background: white; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <p style="font-style: italic;">“Nyende Constructions transformed my idea into a beautiful family home. Professional and timely!”</p>
+      <p style="font-weight: bold; margin-top: 15px;">— Sarah W., Kitengela</p>
+    </div>
+
+    <div style="max-width: 300px; background: white; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <p style="font-style: italic;">“They renovated our shop space in Kajiado. Great quality and communication throughout.”</p>
+      <p style="font-weight: bold; margin-top: 15px;">— James M., Kajiado Town</p>
+    </div>
+
+    <div style="max-width: 300px; background: white; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <p style="font-style: italic;">“From start to finish, Chris and team exceeded expectations. Highly recommended.”</p>
+      <p style="font-weight: bold; margin-top: 15px;">— Margaret A., Rongai</p>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+<script>
+  const images = [
+    'images/house1.jpg',
+    'images/house2.jpg',
+    'images/house3.jpg',
+    'images/house4.jpg',
+    'images/house5.jpg',
+    'images/house6.jpg',
+    'images/house7.jpg',
+    'images/house8.jpg',
+    'images/house9.jpg'
+  ];
+
+  let currentIndex = 0;
+  const slideshowImage = document.getElementById('slideshow-image');
+
+  function showNextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    slideshowImage.src = images[currentIndex];
+  }
+
+  setInterval(showNextImage, 5000); // Change every 5 seconds
+</script>
+
+<script>
+  function openLightbox(img) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    lightbox.style.display = "flex";
+    lightboxImg.src = img.src;
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
+
+<script>
+  const galleryImages = [
+    "images/gallery1.jpg",
+    "images/gallery2.jpg",
+    "images/gallery3.jpg",
+    "images/gallery4.jpg",
+    "images/gallery5.jpg",
+    "images/gallery6.jpg",
+    "images/gallery7.jpg",
+    "images/gallery8.jpg"
+  ];
+
+  let currentImageIndex = 0;
+
+  function openLightbox(index) {
+    event.stopPropagation();
+    currentImageIndex = index;
+    document.getElementById("lightbox-img").src = galleryImages[index];
+    document.getElementById("lightbox").style.display = "flex";
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+
+  function changeImage(direction) {
+    event.stopPropagation();
+    currentImageIndex = (currentImageIndex + direction + galleryImages.length) % galleryImages.length;
+    document.getElementById("lightbox-img").src = galleryImages[currentImageIndex];
+  }
+</script>
+
+<!-- Logo Lightbox -->
+<div id="logo-lightbox" class="lightbox" onclick="closeLogoLightbox()">
+  <span class="close" onclick="closeLogoLightbox()">&times;</span>
+  <img src="images/logo1.png" alt="Logo Enlarged" class="lightbox-img">
+</div>
+
+<script>
+  function openLogoLightbox() {
+    event.stopPropagation();
+    document.getElementById("logo-lightbox").style.display = "flex";
+  }
+
+  function closeLogoLightbox() {
+    document.getElementById("logo-lightbox").style.display = "none";
+  }
+</script>
+<!-- TODO:
+1. Add swipe gestures for gallery.
+2. Animate logo lightbox.
+3. Zoom/pan support for images.
+-->
+
+<div class="promo-banner">
+  <h3>Need a Professional Website?</h3>
+  <p>I'm <strong>Angelo</strong>, a web designer & developer. I create clean, modern, and mobile-friendly websites.</p>
+  <p>Contact me via <a href="mailto:angelokipkoech52@gmail.com" class="promo-link">angelokipkoech52@gmail.com</a>, WhatsApp, or click below.</p>
+  <a href="#contact" class="promo-btn">Let's Work Together</a>
+  <a href="https://wa.me/254112290040" target="_blank" class="whatsapp-btn">💬 Chat on WhatsApp</a>
+</div>
+
+
+
+
+
+
+
+  <footer>
+    <p>Contact: nyendechrispinus@gmail.com | +254 799 713348</p>
+  </footer>
+</body>
+</html>
