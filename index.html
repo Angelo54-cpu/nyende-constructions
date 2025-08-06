@@ -15,6 +15,7 @@
         <li><a href="#home" class="nav-link">Home</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
         <li><a href="#gallery" class="nav-link">Gallery</a></li>
         <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -52,7 +53,7 @@
 </section>
 <section id="services" style="padding: 60px 20px; background-color: #ffffff;">
   <h2 style="text-align: center; font-size: 32px; margin-bottom: 40px;">Our Services</h2>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+  <div class="services-grid">
 
     <div style="max-width: 300px; background: #f2f2f2; border-radius: 8px; padding: 20px;">
       <h3>Residential Construction</h3>
@@ -147,18 +148,59 @@
 </section>
 
 <section id="gallery" class="gallery">
-  <h2>Gallery</h2>
-  <div class="gallery-grid">
-    <div class="gallery-item"><img src="images/gallery1.jpg" alt="Gallery 1" onclick="openLightbox(0)"></div>
-    <div class="gallery-item"><img src="images/gallery2.jpg" alt="Gallery 2" onclick="openLightbox(1)"></div>
-    <div class="gallery-item"><img src="images/gallery3.jpg" alt="Gallery 3" onclick="openLightbox(2)"></div>
-    <div class="gallery-item"><img src="images/gallery4.jpg" alt="Gallery 4" onclick="openLightbox(3)"></div>
-    <div class="gallery-item"><img src="images/gallery5.jpg" alt="Gallery 5" onclick="openLightbox(4)"></div>
-    <div class="gallery-item"><img src="images/gallery6.jpg" alt="Gallery 6" onclick="openLightbox(5)"></div>
-    <div class="gallery-item"><img src="images/gallery7.jpg" alt="Gallery 7" onclick="openLightbox(6)"></div>
-    <div class="gallery-item"><img src="images/gallery8.jpg" alt="Gallery 8" onclick="openLightbox(7)"></div>
+  <h2 style="text-align: center; margin-bottom: 10px;">Gallery</h2>
+  <p style="text-align: center; margin-bottom: 30px;">Here are some of our completed projects:</p>
+  <div class="gallery-grid" id="galleryGrid">
+    <!-- Initial visible images -->
+    <div class="gallery-item"><img src="images/gallery1.jpg" alt="Gallery 1" onclick="openLightboxByElement(this)"></div>
+    <div class="gallery-item"><img src="images/gallery2.jpg" alt="Gallery 2" onclick="openLightboxByElement(this)"></div>
+    <div class="gallery-item"><img src="images/gallery3.jpg" alt="Gallery 3" onclick="openLightboxByElement(this)"></div>
+    <div class="gallery-item"><img src="images/gallery4.jpg" alt="Gallery 4" onclick="openLightboxByElement(this)"></div>
+    <div class="gallery-item"><img src="images/gallery5.jpg" alt="Gallery 5" onclick="openLightboxByElement(this)"></div>
+    <div class="gallery-item"><img src="images/gallery6.jpg" alt="Gallery 6" onclick="openLightboxByElement(this)"></div>
+    <div class="gallery-item"><img src="images/gallery7.jpg" alt="Gallery 7" onclick="openLightboxByElement(this)"></div>
+    <div class="gallery-item"><img src="images/gallery8.jpg" alt="Gallery 8" onclick="openLightboxByElement(this)"></div>
+
+    <!-- Hidden extra images -->
+    <div id="extraImages" style="display: none;">
+      <div class="gallery-item"><img src="images/gallery9.jpg" alt="Gallery 9" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery10.jpg" alt="Gallery 10" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery11.jpg" alt="Gallery 11" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery12.jpg" alt="Gallery 12" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery13.jpg" alt="Gallery 13" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery14.jpg" alt="Gallery 14" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery15.jpg" alt="Gallery 15" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery16.jpg" alt="Gallery 16" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery17.jpg" alt="Gallery 17" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery18.jpg" alt="Gallery 18" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery19.jpg" alt="Gallery 19" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery20.jpg" alt="Gallery 20" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery21.jpg" alt="Gallery 21" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery22.jpg" alt="Gallery 22" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery23.jpg" alt="Gallery 23" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery24.jpg" alt="Gallery 24" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery25.jpg" alt="Gallery 25" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery26.jpg" alt="Gallery 26" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery27.jpg" alt="Gallery 27" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery28.jpg" alt="Gallery 28" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery29.jpg" alt="Gallery 29" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery30.jpg" alt="Gallery 30" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery31.jpg" alt="Gallery 31" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery32.jpg" alt="Gallery 32" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery33.jpg" alt="Gallery 33" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery34.jpg" alt="Gallery 34" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery35.jpg" alt="Gallery 35" onclick="openLightboxByElement(this)"></div>
+      <div class="gallery-item"><img src="images/gallery36.jpg" alt="Gallery 36" onclick="openLightboxByElement(this)"></div>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 20px;">
+    <button onclick="toggleGallery()" id="toggleBtn" style="padding: 10px 20px; background-color: #222; color: white; border: none; border-radius: 5px; cursor: pointer;">
+      ▼ View More
+    </button>
   </div>
 </section>
+
 
 <!-- Lightbox container -->
 <div id="lightbox" class="lightbox" onclick="closeLightbox()">
@@ -281,7 +323,7 @@
 </script>
 
 <script>
-  const galleryImages = [
+  const gallery = [
     "images/gallery1.jpg",
     "images/gallery2.jpg",
     "images/gallery3.jpg",
@@ -320,7 +362,6 @@
     "images/gallery36.jpg"
   ];
 
-  let currentImageIndex = 0;
 
   function openLightbox(index) {
     event.stopPropagation();
@@ -369,6 +410,84 @@
   <a href="#contact" class="promo-btn">Let's Work Together</a>
   <a href="https://wa.me/254112290040" target="_blank" class="whatsapp-btn">💬 Chat on WhatsApp</a>
 </div>
+
+<script>
+  const toggleBtn = document.getElementById("toggleBtn");
+  const extraImages = document.getElementById("extraImages");
+
+  function toggleGallery() {
+    if (extraImages.style.display === "none") {
+      extraImages.style.display = "grid";
+      toggleBtn.textContent = "▲ View Less";
+    } else {
+      extraImages.style.display = "none";
+      toggleBtn.textContent = "▼ View More";
+    }
+  }
+
+  // Auto-collapse when navigating to other sections
+  document.querySelectorAll(".nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+      if (extraImages.style.display === "grid") {
+        extraImages.style.display = "none";
+        toggleBtn.textContent = "▼ View More";
+      }
+    });
+  });
+</script>
+
+
+<!-- Lightbox container -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <a class="lightbox-prev" onclick="changeImage(-1)">&#10094;</a>
+  <img class="lightbox-img" id="lightbox-img" src="">
+  <a class="lightbox-next" onclick="changeImage(1)">&#10095;</a>
+</div>
+
+<script>
+  const galleryImages = [
+    "images/gallery1.jpg", "images/gallery2.jpg", "images/gallery3.jpg", "images/gallery4.jpg",
+    "images/gallery5.jpg", "images/gallery6.jpg", "images/gallery7.jpg", "images/gallery8.jpg",
+    "images/gallery9.jpg", "images/gallery10.jpg", "images/gallery11.jpg", "images/gallery12.jpg",
+    "images/gallery13.jpg", "images/gallery14.jpg", "images/gallery15.jpg", "images/gallery16.jpg",
+    "images/gallery17.jpg", "images/gallery18.jpg", "images/gallery19.jpg", "images/gallery20.jpg",
+    "images/gallery21.jpg", "images/gallery22.jpg", "images/gallery23.jpg", "images/gallery24.jpg",
+    "images/gallery25.jpg", "images/gallery26.jpg", "images/gallery27.jpg", "images/gallery28.jpg",
+    "images/gallery29.jpg", "images/gallery30.jpg", "images/gallery31.jpg", "images/gallery32.jpg",
+    "images/gallery33.jpg", "images/gallery34.jpg", "images/gallery35.jpg", "images/gallery36.jpg"
+  ];
+
+  let currentImageIndex = 0;
+
+  function openLightboxByElement(imgElement) {
+    const src = imgElement.getAttribute("src");
+    const index = galleryImages.indexOf(src);
+    if (index !== -1) {
+      openLightbox(index);
+    }
+  }
+
+  function openLightbox(index) {
+    event.stopPropagation();
+    currentImageIndex = index;
+    document.getElementById("lightbox-img").src = galleryImages[index];
+    document.getElementById("lightbox").style.display = "flex";
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+
+  function changeImage(direction) {
+    event.stopPropagation();
+    currentImageIndex = (currentImageIndex + direction + galleryImages.length) % galleryImages.length;
+    document.getElementById("lightbox-img").src = galleryImages[currentImageIndex];
+  }
+</script>
+
+</body>
+</html>
 
 
 
