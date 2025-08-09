@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
+  <header class="site-header">
   <div class="header-container">
     <img src="images/logo1.png" alt="Nyende Logo" class="logo" onclick="openLogoLightbox()">
     <nav>
@@ -40,7 +40,7 @@
   <div class="about-container">
     <h2>About Us</h2>
     <p>
-      Nyende Constructions is a passionate and skilled building company led by Engineer Crispinus Nyende. 
+      <strong>Nyende Constructions</strong> is a passionate and skilled building company led by <strong>Engineer Crispinus Nyende.</strong> 
       With a solid foundation in structural design and site management, we specialize in creating long-lasting, 
       client-centered homes and commercial buildings. Whether you have a full blueprint or just a vision in your mind, 
       we walk with you — step by step — to bring your ideas to life.
@@ -121,7 +121,7 @@
         <img src="images/project1.jpg" alt="Project 1" style="width: 100%; height: auto;">
         <div style="padding: 15px;">
           <h3>Kitengela Family Home</h3>
-          <p>A modern 4-bedroom home built with elegance and durability in mind.</p>
+          <p>A modern 3-bedroom home built with elegance and durability in mind.</p>
         </div>
       </div>
 
@@ -129,7 +129,7 @@
       <div style="flex: 1 1 300px; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); overflow: hidden;">
         <img src="images/project2.jpg" alt="Project 2" style="width: 100%; height: auto;">
         <div style="padding: 15px;">
-          <h3>Isinya Renovation</h3>
+          <h3>Kajiado Plastering</h3>
           <p>Transformed an aging structure into a stylish, energy-efficient space.</p>
         </div>
       </div>
@@ -138,8 +138,8 @@
       <div style="flex: 1 1 300px; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); overflow: hidden;">
         <img src="images/project3.jpg" alt="Project 3" style="width: 100%; height: auto;">
         <div style="padding: 15px;">
-          <h3>Commercial Office Block</h3>
-          <p>Complete construction of a two-story business complex in Kajiado town.</p>
+          <h3>Commercial House Block</h3>
+          <p>Complete construction of a 4-bedroom bungalow complex in Kajiado town.</p>
         </div>
       </div>
 
@@ -222,7 +222,9 @@
       <p><strong>📞 Phone:</strong> <a href="tel:+254799713348">+254 799 713348</a></p>
       <p><strong>📧 Email:</strong> <a href="mailto:nyendechrispinus@gmail.com">nyendechrispinus@gmail.com</a></p>
       <p><strong>📍 Location:</strong> Kajiado, Kenya</p>
-      <a href="https://wa.me/254799713348" class="whatsapp-button" target="_blank">💬 Chat on WhatsApp</a>
+      <a href="https://wa.me/254799713348" class="whatsapp-button" target="_blank">
+    💬 Chat on WhatsApp
+      </a>
     </div>
 
     <!-- Message Form -->
@@ -404,11 +406,16 @@
 -->
 
 <div class="promo-banner">
-  <h3>Need a Professional Website?</h3>
-  <p>I'm <strong>Angelo</strong>, a web designer & developer. I create clean, modern, and mobile-friendly websites.</p>
-  <p>Contact me via <a href="mailto:angelokipkoech52@gmail.com" class="promo-link">angelokipkoech52@gmail.com</a>, WhatsApp, or click below.</p>
-  <a href="#contact" class="promo-btn">Let's Work Together</a>
-  <a href="https://wa.me/254112290040" target="_blank" class="whatsapp-btn">💬 Chat on WhatsApp</a>
+  <h3>🚀 Need a Professional Website?</h3>
+  <p>I'm <strong>Angelo</strong>, a passionate <strong>Web Designer & Developer</strong> who creates clean, modern, and mobile-friendly websites tailored to your needs.</p>
+  <p>Contact me via 
+    <a href="mailto:angelokipkoech54@gmail.com" class="promo-link">📧 angelokipkoech54@gmail.com</a>, 
+    WhatsApp, or click below.
+  </p>
+  <div class="promo-buttons">
+    <a href="#contact" class="promo-btn">✨ Let's Work Together</a>
+    <a href="https://wa.me/254112290040" target="_blank" class="whatsapp-btn">💬 Chat on WhatsApp</a>
+  </div>
 </div>
 
 <script>
@@ -486,6 +493,38 @@
   }
 </script>
 
+
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/254799713348" 
+   target="_blank" 
+   style="position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; padding: 12px 14px; border-radius: 50%; box-shadow: 0 4px 6px rgba(0,0,0,0.2); z-index: 999; text-align:center; font-size: 24px;">
+   <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Font Awesome for WhatsApp icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<script>
+
+let lastScrollTop = 0;
+const header = document.querySelector('.site-header');
+
+window.addEventListener('scroll', function () {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop && scrollTop > 50) {
+    // scrolling down
+    header.classList.add('hidden');
+  } else {
+    // scrolling up
+    header.classList.remove('hidden');
+  }
+  
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // avoid negative
+});
+</script>
+
 </body>
 </html>
 
@@ -496,7 +535,7 @@
 
 
   <footer>
-    <p>Contact: nyendechrispinus@gmail.com | +254 799 713348</p>
+    <p>Contact: <a href="mailto:nyendechrispinus@gmail.com">nyendechrispinus@gmail.com </a> | <a href="tel:+254799713348">+254 799 713348</a></p>
   </footer>
 </body>
 </html>
